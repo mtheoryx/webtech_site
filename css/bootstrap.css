@@ -101,6 +101,45 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+#skipnav {
+  left: -9999em;
+  position: absolute;
+  top: -9999em;
+}
+div#signature {
+  width: auto;
+  height: 44px;
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+}
+#identity a {
+  color: #fff;
+  text-decoration: underline;
+}
+#signature a.iu {
+  background: url(../img/iu_crimson.gif) no-repeat 20px 0;
+  display: block;
+  height: 44px;
+  left: -20px;
+  position: relative;
+  top: 0;
+  width: 250px;
+}
+#signature a.iu img {
+  display: none;
+}
+/*
+IU Footer Primary Styles
+*/
+div#blockiu,
+div#statement {
+  height: 28px;
+  float: left;
+}
+div#blockiu img {
+  margin: 0 5px;
+}
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -110,11 +149,11 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #0088cc;
+  color: #990000;
   text-decoration: none;
 }
 a:hover {
-  color: #005580;
+  color: #4d0000;
   text-decoration: underline;
 }
 .row {
@@ -1683,7 +1722,7 @@ table .span12 {
 .dropdown-menu .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #0088cc;
+  background-color: #990000;
 }
 .dropdown.open {
   *z-index: 1000;
@@ -1870,16 +1909,16 @@ table .span12 {
   color: rgba(255, 255, 255, 0.75);
 }
 .btn-primary {
-  background-color: #006dcc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(top, #0088cc, #0044cc);
+  background-color: #991400;
+  background-image: -moz-linear-gradient(top, #990000, #993300);
+  background-image: -ms-linear-gradient(top, #990000, #993300);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#990000), to(#993300));
+  background-image: -webkit-linear-gradient(top, #990000, #993300);
+  background-image: -o-linear-gradient(top, #990000, #993300);
+  background-image: linear-gradient(top, #990000, #993300);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#993300', GradientType=0);
+  border-color: #993300 #993300 #4d1a00;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
@@ -1888,11 +1927,11 @@ table .span12 {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #0044cc;
+  background-color: #993300;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #662200 \9;
 }
 .btn-warning {
   background-color: #faa732;
@@ -2240,7 +2279,7 @@ input[type="submit"].btn.small {
 .nav-list .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #990000;
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
@@ -2308,7 +2347,7 @@ input[type="submit"].btn.small {
 .nav-pills .active > a,
 .nav-pills .active > a:hover {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #990000;
 }
 .nav-stacked > li {
   float: none;
@@ -2357,12 +2396,12 @@ input[type="submit"].btn.small {
 }
 .nav-tabs .dropdown-toggle .caret,
 .nav-pills .dropdown-toggle .caret {
-  border-top-color: #0088cc;
+  border-top-color: #990000;
   margin-top: 6px;
 }
 .nav-tabs .dropdown-toggle:hover .caret,
 .nav-pills .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
+  border-top-color: #4d0000;
 }
 .nav-tabs .active .dropdown-toggle .caret,
 .nav-pills .active .dropdown-toggle .caret {
@@ -2488,15 +2527,15 @@ input[type="submit"].btn.small {
 .navbar-inner {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #2c2c2c;
-  background-image: -moz-linear-gradient(top, #333333, #222222);
-  background-image: -ms-linear-gradient(top, #333333, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
-  background-image: -webkit-linear-gradient(top, #333333, #222222);
-  background-image: -o-linear-gradient(top, #333333, #222222);
-  background-image: linear-gradient(top, #333333, #222222);
+  background-color: #7d110c;
+  background-image: -moz-linear-gradient(top, #7d110c, #7d110c);
+  background-image: -ms-linear-gradient(top, #7d110c, #7d110c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7d110c), to(#7d110c));
+  background-image: -webkit-linear-gradient(top, #7d110c, #7d110c);
+  background-image: -o-linear-gradient(top, #7d110c, #7d110c);
+  background-image: linear-gradient(top, #7d110c, #7d110c);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d110c', endColorstr='#7d110c', GradientType=0);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2510,16 +2549,16 @@ input[type="submit"].btn.small {
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #2c2c2c;
-  background-image: -moz-linear-gradient(top, #333333, #222222);
-  background-image: -ms-linear-gradient(top, #333333, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
-  background-image: -webkit-linear-gradient(top, #333333, #222222);
-  background-image: -o-linear-gradient(top, #333333, #222222);
-  background-image: linear-gradient(top, #333333, #222222);
+  background-color: #7d110c;
+  background-image: -moz-linear-gradient(top, #7d110c, #7d110c);
+  background-image: -ms-linear-gradient(top, #7d110c, #7d110c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7d110c), to(#7d110c));
+  background-image: -webkit-linear-gradient(top, #7d110c, #7d110c);
+  background-image: -o-linear-gradient(top, #7d110c, #7d110c);
+  background-image: linear-gradient(top, #7d110c, #7d110c);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
-  border-color: #222222 #222222 #000000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d110c', endColorstr='#7d110c', GradientType=0);
+  border-color: #7d110c #7d110c #370805;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
@@ -2531,11 +2570,11 @@ input[type="submit"].btn.small {
 .btn-navbar.active,
 .btn-navbar.disabled,
 .btn-navbar[disabled] {
-  background-color: #222222;
+  background-color: #7d110c;
 }
 .btn-navbar:active,
 .btn-navbar.active {
-  background-color: #080808 \9;
+  background-color: #4e0b08 \9;
 }
 .btn-navbar .icon-bar {
   display: block;
@@ -2705,7 +2744,7 @@ input[type="submit"].btn.small {
 .navbar .nav .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #222222;
+  background-color: #7d110c;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .navbar .divider-vertical {
@@ -2713,8 +2752,8 @@ input[type="submit"].btn.small {
   width: 1px;
   margin: 0 9px;
   overflow: hidden;
-  background-color: #222222;
-  border-right: 1px solid #333333;
+  background-color: #7d110c;
+  border-right: 1px solid #7d110c;
 }
 .navbar .nav.pull-right {
   margin-left: 10px;
@@ -3203,7 +3242,7 @@ input[type="submit"].btn.small {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #990000;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
