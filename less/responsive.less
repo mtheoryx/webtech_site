@@ -16,7 +16,7 @@
 // REPEAT VARIABLES & MIXINS
 // -------------------------
 // Required since we compile the responsive stuff separately
-
+@import "visual_identity.less"; // IU Visual Identity
 @import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "mixins.less";
 
@@ -37,7 +37,7 @@
 // ---------------------
 
 @media (max-width: 480px) {
-
+	
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
@@ -115,10 +115,8 @@
   .carousel-caption {
     position: static;
   }
-
+  
 }
-
-
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
@@ -147,6 +145,32 @@
     width: auto;
     margin: 0;
   }
+  footer div#statement p span.breaks {
+  	display:block;
+  	font-size:1.3em;
+  	padding:5px 0;
+  	border-bottom:1px solid @grayLight;
+  	border-top:1px solid @grayLighter;
+  }
+  
+  footer div#statement p span.breaks:hover {
+  	background-color:@grayLighter;
+  }
+  
+  footer div#statement {
+  	width:100%;
+  	margin-bottom:20px;
+  	height:auto;
+  	margin-left:-10px;
+  	
+  }
+  footer {padding-left:0;}
+  
+  footer hr {
+  	width:100%;
+  	margin-left:-10px;
+  }
+
 }
 
 
@@ -164,7 +188,7 @@
 
   // Input grid
   #inputGridSystem > .generate(12, 42px, 20px);
-
+  
 }
 
 
@@ -294,6 +318,14 @@
   .nav-collapse.collapse {
     height: auto !important;
   }
+	footer#copyright {
+		font-size: 0.688em; /* 11px */
+		line-height: 1.364em; /* 15px */
+		width:100%;
+		margin:0 auto;
+		padding-left:0;
+	}  
+
 }
 
 
@@ -319,5 +351,6 @@
   .thumbnails > li {
     margin-left: 30px;
   }
+
 
 }

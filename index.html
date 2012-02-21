@@ -22,9 +22,9 @@
       }
     </style>
 	<!--    Responsive Styles for devices-->
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 	<!--    Custom Styles-->
-	<link href="css/style.css" rel="stylesheet">
+	<!--	<link href="css/style.css" rel="stylesheet">-->
 
     <!-- @TODO: Create IU fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -35,10 +35,8 @@
 
   <body>
 	
-	<!--	@TODO: IU Visual Identity Branding Bar-->
-	<!--	End IU Visual Identity Branding Bar-->
-	
-    <div class="navbar navbar-fixed-top">
+	<!--	IU Visual Identity Branding Bar-->
+	<div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -46,7 +44,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <div id="signature">
+          	<a href="http://www.indiana.edu/" class="iu">
+          		<img width="171" height="44" src="img/iu_white.gif" alt="Indiana University trident and signature" />
+          	</a>
+          </div>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -56,8 +58,9 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
-    </div>
-
+    </div><!--	End IU Visual Identity Branding Bar-->
+	
+	
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
@@ -86,12 +89,43 @@
         </div>
       </div>
 
-      <hr>
-
-      <footer>
-		<!--      	@TODO IU Visual Identity Copyright Footer-->
-        <p>&copy; Company 2012</p>
-      </footer>
+    
+		<!--		IU Visual Identity Footer-->
+	<footer class="branding" id="copyright">
+			<hr />
+			<div id="blockiu">
+				<a href="http://www.indiana.edu/">
+					<img width="22" height="28" src="img/blockiu_white.gif" alt="Block IU Trident Icon" />
+				</a>
+			</div>
+			<div id="statement">
+				<p>
+					<span class="breaks">
+					<a href="http://www.indiana.edu/comments/copyright.shtml">Copyright</a>
+					&copy;
+					<script type="text/javascript">
+					var theDate=new Date()
+					document.write(theDate.getFullYear())
+					</script>
+					<noscript>
+					2012
+					</noscript>
+					</span>
+					
+					<span class="breaks">
+					The Trustees of <a href="http://indiana.edu/">Indiana University</a>
+					</span>
+					
+					<span class="breaks">
+					<a href="http://www.indiana.edu/comments/copyright.shtml">Copyright Complaints</a>
+					</span>
+					
+					<span class="breaks">
+					<a href="http://search.iu.edu/Privacy.aspx">Privacy Statement</a>
+					</span>
+				</p>
+			</div>
+		</footer> <!--/IU Visual Identity footer-->
 
     </div> <!-- /container -->
 
@@ -100,7 +134,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.7.1.min.js"></script>
 
-    <!-- <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
@@ -111,7 +145,7 @@
     <script src="js/bootstrap-button.js"></script>
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script> -->
+    <script src="js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
